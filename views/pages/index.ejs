@@ -16,7 +16,7 @@
     <script>
       $(document).ready(function() {
         $("#twitterLogin").click(function() {
-          $.post('http://api.twitter.com/oauth/request_token', {oauth_callback: 'http://www.google.com'}, function(data) {
+          $.post('https://api.twitter.com/oauth/request_token', {oauth_callback: 'http://www.google.com'}, function(data) {
             console.log(data);
           });
         });
